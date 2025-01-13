@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Apostas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo de Apostas - Adivinha o Número</h1>
+    <p>Escolha um número de 1 a 10 e faça sua aposta!</p>
+    
+    <input type="number" id="userGuess" min="1" max="10" placeholder="Digite um número entre 1 e 10" required>
+    <button onclick="makeBet()">Fazer Aposta</button>
+    
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
