@@ -69,8 +69,10 @@
 
             if (userGuess == randomNumber) {
                 resultDiv.innerHTML = `Parabéns! Você acertou o número: ${randomNumber}. Você ganhou uma Filomena!`;
+                resultDiv.style.color = "green";
             } else {
                 resultDiv.innerHTML = `Ops! O número era ${randomNumber}. Tente novamente!`;
+                resultDiv.style.color = "red";
             }
         }
 
